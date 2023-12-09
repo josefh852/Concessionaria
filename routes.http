@@ -2,9 +2,9 @@ POST http://localhost:3333/camionete
 Content-Type: application/json
 
 {
-    "cor": "",
-    "modelo": "",
-    "marca": ""
+    "cor": "azul",
+    "marca": "ford",
+    "modelo": "maverik"
 }
 
 ###
@@ -20,9 +20,9 @@ PUT http://localhost:3333/camionetes/f43a9a30-83e3-4206-b193-0189e49b5009
 Content-Type: application/json
 
 {
-    "cor": "",
-    "marca": "",
-    "modelo": ""
+    "cor": "branca",
+    "marca": "ram",
+    "modelo": "laramie 2500"
 }
 
 ###
