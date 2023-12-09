@@ -8,7 +8,7 @@ server.get('/', () => {
     return 'Rota padrão'
 })
 
-server.post('/carro', (request, reply) => {
+server.post('/camionete', (request, reply) => {
 // Acessando dados do corpo da requisição
     const {cor, modelo, marca} = request.body
 // Exibindo dados
