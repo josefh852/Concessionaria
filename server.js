@@ -24,18 +24,18 @@ server.post('/camionete', (request, reply) => {
     return reply.status(201).send
 })
 
-server.get('/carro', (request) => {
+server.get('/camionete', (request) => {
     const search = request.query.search
     console.log(search)
-    const carros = database.list(search)
-    console.log(carros)
-    return carros
+    const camionetes = database.list(search)
+    console.log(camionetes)
+    return camionetes
 })
 
-server.put('/carros/:id', (request, reply) => {
-    const carroId = request.params.id
+server.put('/camionetes/:id', (request, reply) => {
+    const camioneteId = request.params.id
     const {cor, modelo, marca} = request.body
-    const carro = database.update(carroId, {
+    const camionete = database.update(camioneteId, {
         cor: cor,
         amodelo: modelo,
         marca: marca,
@@ -43,10 +43,10 @@ server.put('/carros/:id', (request, reply) => {
     return reply.status(204).send()
 })
 
-server.delete('/carros/:id', (request, reply) => {
-    const carroId = request.params.id
+server.delete('/camionetes/:id', (request, reply) => {
+    const camioneteId = request.params.id
 
-    database.delete(carroId)
+    database.delete(camioneteId)
 
     return reply.status(204).send()
 }) 
