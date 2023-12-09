@@ -1,31 +1,30 @@
-POST http://localhost:3333/livro
+POST http://localhost:3333/carro
 Content-Type: application/json
 
 {
-    "titulo": "Livro 01",
-    "autor": "autor 01",
-    "npaginas": "400"
+    "cor": "",
+    "modelo": "",
+    "marca": ""
 }
 
 ###
 
-GET http://localhost:3333/livro
+GET http://localhost:3333/carro
+###
+
+GET http://localhost:3333/carro?search=IFMS
 
 ###
 
-GET http://localhost:3333/livro?search=IFMS
-
-###
-
-PUT http://localhost:3333/livros/f43a9a30-83e3-4206-b193-0189e49b5009
+PUT http://localhost:3333/carros/f43a9a30-83e3-4206-b193-0189e49b5009
 Content-Type: application/json
 
 {
-    "titulo": "Livro IFMS",
-    "autor": "Professor",
-    "npaginas": "100"
+    "cor": "",
+    "marca": "",
+    "modelo": ""
 }
 
 ###
 
-DELETE http://localhost:3333/livros/
+DELETE http://localhost:3333/carros/
