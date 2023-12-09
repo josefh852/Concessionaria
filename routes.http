@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
     "cor": "azul",
-    "marca": "ford",
-    "modelo": "maverik"
+    "modelo": "maverik",
+    "marca": "ford"
 }
 
 ###
@@ -21,8 +21,8 @@ Content-Type: application/json
 
 {
     "cor": "branca",
-    "marca": "ram",
-    "modelo": "laramie 2500"
+    "modelo": "laramie 2500",
+    "marca": "ram"
 }
 
 ###
