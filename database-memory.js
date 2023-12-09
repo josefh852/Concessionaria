@@ -1,34 +1,34 @@
 import { randomUUID } from "crypto"
 
 export class DatabaseMemory{
-#carros = new Map()
+#camionetes = new Map()
 
 list(search){
-    return Array.from(this.#carros.entries()).map((carrosArray) =>{
+    return Array.from(this.#camionetes.entries()).map((camionetesArray) =>{
     // acessando primeira posição
-        const id = carrosArray[0]
-        const data = carrosArray[1]
+        const id = camionetesArray[0]
+        const data = camionetesArray[1]
 
         return{
             id,
             ...data
         }
     })
-    .filter(livro => {
+    .filter(camionete => {
         if (search){
-            return carro.titulo.includes(search)
+            return camionete.titulo.includes(search)
         }
         return true
     })
 }
-create(carro){
-    const carroId = randomUUID()
-    this.#carros.set(carroId, carro)
+create(camionete){
+    const camioneteId = randomUUID()
+    this.#camionetes.set(camioneteId, camionete)
 }
-update(id, carro){
-    this.#carros.set(id, carro)
+update(id, camionete){
+    this.#camionetes.set(id, camionete)
 }
-delete(id, carro){
-    this.#carros.delete(id, carro)
+delete(id, camionete){
+    this.#camionetes.delete(id, camionete)
 }
 }
