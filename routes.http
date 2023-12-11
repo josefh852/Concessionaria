@@ -2,14 +2,15 @@ POST http://localhost:3333/camionete
 Content-Type: application/json
 
 {
-    "cor": "azul",
-    "modelo": "maverik",
-    "marca": "ford"
+    "modelo": "Amarok",
+    "marca": "Volkswagen",
+    "cor": "Branco"
 }
 
 ###
 
 GET http://localhost:3333/camionete
+
 ###
 
 GET http://localhost:3333/camionete?search=IFMS
@@ -20,11 +21,11 @@ PUT http://localhost:3333/camionetes/f43a9a30-83e3-4206-b193-0189e49b5009
 Content-Type: application/json
 
 {
-    "cor": "branca",
-    "modelo": "laramie 2500",
-    "marca": "ram"
+    "modelo": "S10",
+    "marca": "Chevrolet",
+    "cor": "Azul"
 }
 
 ###
 
-DELETE http://localhost:3333/camionetes/
+DELETE http://localhost:3333/camionetes/f43a9a30-83e3-4206
