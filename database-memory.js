@@ -16,7 +16,7 @@ list(search){
     })
     .filter(camionete => {
         if (search){
-            return camionete.titulo.includes(search)
+            return camionete.modelo.includes(search)
         }
         return true
     })
